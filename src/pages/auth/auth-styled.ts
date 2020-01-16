@@ -15,4 +15,12 @@ export const AuthForm = styled('form')`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
     0 2px 9px 0 rgba(18, 106, 211, 0.06);
   background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
+
+export const AuthLogo = styled('span')`
+	margin-bottom: 20px;
+`

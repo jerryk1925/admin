@@ -1,6 +1,9 @@
 import styled from '@emotion/styled';
 
-export const FormGroup = styled('div')``;
+export const FormGroup = styled('div')`
+  margin-bottom: 20px;
+  width:100%;
+`;
 
 export const FormControl = styled('input')`
   width: 100%;

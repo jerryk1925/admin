@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Input } from '../../components/UI';
-import { AuthWrapper, AuthForm } from './auth-styled';
+import { Input, Button } from '../../components/UI';
+import { AuthWrapper, AuthForm, AuthLogo } from './auth-styled';
 
 export const Auth: React.FC = () => {
   const [name, setName] = useState('');
@@ -11,8 +11,11 @@ export const Auth: React.FC = () => {
   return (
     <AuthWrapper>
       <AuthForm>
-        <div>Logo</div>
+        <AuthLogo>Login</AuthLogo>
         <Input handler={handle} value={name} />
+        <Input handler={handle} value={name} />
+        <Input handler={handle} value={name} />
+        <Button></Button>
       </AuthForm>
     </AuthWrapper>
   );

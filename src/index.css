@@ -7,4 +7,9 @@ html {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    outline: none;
+    cursor: pointer;
 }
