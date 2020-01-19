@@ -22,5 +22,5 @@ export const AuthForm = styled('form')`
 `;
 
 export const AuthLogo = styled('span')`
-	margin-bottom: 20px;
-`
+  margin-bottom: 20px;
+`;

@@ -7,6 +7,7 @@ interface InputProps {
   handler(event: React.FormEvent<HTMLInputElement>): void;
   placeholder?: string;
   name?: string;
+  keyPress?: () => void;
 }
 
 export const Input: React.FC<InputProps> = ({
@@ -14,7 +15,8 @@ export const Input: React.FC<InputProps> = ({
   value = '',
   handler,
   placeholder = 'Placeholder',
-  name
+  name,
+  keyPress
 }) => {
   return (
     <FormGroup>
@@ -26,6 +28,7 @@ export const Input: React.FC<InputProps> = ({
           onChange={handler}
           name={name}
           id={name}
+          onKeyPress={keyPress}
         />
       </FormLabel>
     </FormGroup>

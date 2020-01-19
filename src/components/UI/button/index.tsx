@@ -3,7 +3,7 @@ import { ButtonWrapper } from './button-styled';
 
 interface ButtonProps {
   type?: 'button' | 'reset' | 'submit' | undefined;
-  click?: void;
+  click?: () => void;
   name?: string;
   title?: string;
 }
@@ -14,5 +14,9 @@ export const Button: React.FC<ButtonProps> = ({
   name,
   title = 'Button'
 }) => {
-  return <ButtonWrapper type={type}>{title}</ButtonWrapper>;
+  return (
+    <ButtonWrapper onClick={click} type={type}>
+      {title}
+    </ButtonWrapper>
+  );
 };
