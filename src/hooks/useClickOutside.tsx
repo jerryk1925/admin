@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
-export const useClickOutside = (ref: any, callback: any) => {
+export const useClickOutside = (ref: any, callback: () => void) => {
+  console.log(typeof callback);
   const handleClick = (e: Event) => {
     if (ref.current && !ref.current.contains(e.target)) {
       callback();
@@ -15,4 +16,3 @@ export const useClickOutside = (ref: any, callback: any) => {
     };
   });
 };
-

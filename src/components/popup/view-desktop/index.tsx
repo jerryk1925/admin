@@ -3,7 +3,7 @@ import { useClickOutside } from '../../../hooks/useClickOutside';
 import { PopupWrapper, Popup } from './popup-desktop';
 
 interface Popup {
-  onClose?: () => void;
+  onClose: () => void;
 }
 
 export const PopupViewDesktop: React.FC<Popup> = ({ onClose }) => {
