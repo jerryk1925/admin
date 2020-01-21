@@ -1,0 +1,33 @@
+{
+  "allBuget": 100000,
+  "income": 200000,
+  "incomeArray": [
+    {
+      "id": 1,
+      "description" : "qweqwe",
+      "currency": "UAH",
+      "color": "red",
+      "icon": "qwe",
+      "budget": 10000,
+      "income": 500
+    },
+    {
+      "id": 2,
+      "description" : "qweqwe",
+      "currency": "UAH",
+      "color": "red",
+      "icon": "qwe",
+      "budget": 10000,
+      "income": 500
+    },
+    {
+      "id": 3,
+      "description" : "qweqwe",
+      "currency": "UAH",
+      "color": "red",
+      "icon": "qwe",
+      "budget": 10000,
+      "income": 500
+    }
+  ]
+}

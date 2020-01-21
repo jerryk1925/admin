@@ -39,3 +39,15 @@ export const CategoryAdd = styled('div')`
     height: 20px;
   }
 `;
+
+export const CategoryWrapper = styled('div')`
+  position: relative;
+  margin: 10px 0;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #dedcdc;
+  cursor: pointer;
+`

@@ -17,7 +17,6 @@ export const Auth: React.FC = () => {
     setPassword(value);
   };
   const submit = (): void => {
-    console.log('qwe');
     if (name === 'qwe' && password === 'qwe') {
       history.push('/main');
     } else {

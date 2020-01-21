@@ -1,5 +1,9 @@
 import styled from '@emotion/styled';
 
+interface PopupProps {
+  backgroundColor?: string;
+}
+
 export const PopupWrapper = styled('div')`
   position: fixed;
   top: 0;
@@ -14,12 +18,13 @@ export const PopupWrapper = styled('div')`
   padding: 150px;
 `;
 
-export const Popup = styled('div')`
+export const Popup = styled('div')<PopupProps>`
   margin: auto;
-  background: white;
+  background: ${props => props.backgroundColor || 'white'};
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
     0 2px 9px 0 rgba(18, 106, 211, 0.06);
   width: 400px;
   border-radius: 4px;
-  padding: 15px;
+  color: white;
 `;
+

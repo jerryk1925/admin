@@ -26,5 +26,12 @@ export const CategoryItem: React.FC<CategoryItenProps> = ({
       </>
     );
   }
-  return <div>cat</div>;
+  return (
+    <div>
+      <div>cat</div>
+      <div></div>
+      <div></div>
+    </div>
+    
+  )
 };
