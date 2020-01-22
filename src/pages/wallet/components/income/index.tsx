@@ -10,6 +10,8 @@ import {
   TextWrapper
 } from './income-styled';
 
+import { Text } from "../../../../assets/styled/text-styled";
+
 export const Income: React.FC = () => {
   return (
     <IncomeWrapper>
@@ -30,6 +32,7 @@ export const Income: React.FC = () => {
       <IncomeBody>
         <CategoryItem add />
         <CategoryItem />
+        <Text>qweqweqeqweqweqweqeqweqeqweqweqwe</Text>
       </IncomeBody>
     </IncomeWrapper>
   );
