@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useClickOutside } from '../../../hooks/useClickOutside';
-import { PopupWrapper, Popup } from './popup-desktop';
+import { PopupWrapper, Popup, PopupHeader, PopupContent } from './popup-desktop';
 
 interface Popup {
   onClose: () => void;
@@ -17,11 +17,13 @@ export const PopupViewDesktop: React.FC<Popup> = ({ onClose }) => {
   return (
     <PopupWrapper>
       <Popup ref={ref}>
-          <div>
+          <PopupHeader justify='space-between'>
             <div>asdasdasd</div>
             <div onClick={onClose}>x</div>
-          </div>
-          <div></div>
+          </PopupHeader>
+          <PopupContent>
+            ASDASDASDSAD
+          </PopupContent>
       </Popup>
     </PopupWrapper>
   );

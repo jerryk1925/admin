@@ -4,8 +4,12 @@ import { SpriteComponent } from '../../../../components/sprite-component';
 import {
   CategoryAdd,
   CategoryWrapper,
-  CategoryIcon
+  CategoryIcon,
+  CategoryTitle,
+  CategoryActualAmount
 } from './category-item-styled';
+
+import { BlockStatsTitle } from "../../../../assets/styled/block-styled";
 
 interface CategoryItenProps {
   id?: number;
@@ -22,16 +26,21 @@ export const CategoryItem: React.FC<CategoryItenProps> = ({
   const closePopup = (): void => {
     setOpen(false);
   };
-
+  
   return (
-    <CategoryWrapper justify="center">
+    <CategoryWrapper>
       {add ? (
-        <CategoryAdd onClick={(): void => setOpen(true)}></CategoryAdd>
+        <>
+          <CategoryTitle></CategoryTitle>
+          <CategoryAdd onClick={(): void => setOpen(true)}></CategoryAdd>
+        </>
       ) : (
         <>
-          <CategoryIcon>
-            <SpriteComponent />
+          <CategoryTitle>we</CategoryTitle>
+          <CategoryIcon onClick={(): void => setOpen(true)}>
           </CategoryIcon>
+          <CategoryActualAmount color='#0a93d1'>qwe</CategoryActualAmount>
+          <BlockStatsTitle>qwe</BlockStatsTitle>
         </>
       )}
       {!open || <Popup open={open} onClose={closePopup} />}
