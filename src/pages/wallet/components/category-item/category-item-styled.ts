@@ -1,15 +1,34 @@
 import styled from '@emotion/styled';
+import { Flex } from '../../../../assets/styled';
 
-export const CategoryAdd = styled('div')`
+export const CategoryWrapper = styled(Flex)`
+  width: 80px;
+  margin: 0 3px 15px;
+  position: relative;
+`;
+const Category = styled('div')`
   position: relative;
   margin: 10px 0;
   width: 60px;
   height: 60px;
   overflow: hidden;
   border-radius: 50%;
+  cursor: pointer;
+`;
+
+export const CategoryIcon = styled(Category)`
+  background: #3190f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.13);
+  &:hover{
+    background: #0b9ee1;
+  }
+`;
+export const CategoryAdd = styled(Category)`
   background-color: transparent;
   border: 2px solid #dedcdc;
-  cursor: pointer;
 
   &:hover {
     border-color: #b6b3b3;
@@ -39,15 +58,3 @@ export const CategoryAdd = styled('div')`
     height: 20px;
   }
 `;
-
-export const CategoryWrapper = styled('div')`
-  position: relative;
-  margin: 10px 0;
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 2px solid #dedcdc;
-  cursor: pointer;
-`

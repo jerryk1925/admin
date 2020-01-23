@@ -17,7 +17,11 @@ export const PopupViewDesktop: React.FC<Popup> = ({ onClose }) => {
   return (
     <PopupWrapper>
       <Popup ref={ref}>
-
+          <div>
+            <div>asdasdasd</div>
+            <div onClick={onClose}>x</div>
+          </div>
+          <div></div>
       </Popup>
     </PopupWrapper>
   );

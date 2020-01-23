@@ -23,8 +23,9 @@ export const Popup = styled('div')<PopupProps>`
   background: ${props => props.backgroundColor || 'white'};
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
     0 2px 9px 0 rgba(18, 106, 211, 0.06);
-  width: 400px;
+  width: 500px;
   border-radius: 4px;
-  color: white;
 `;
+
+
 
