@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
-import { Flex } from '../../../../assets/styled';
 
-export const CategoryWrapper = styled(Flex)`
+export const CategoryWrapper = styled('div')`
   width: 80px;
   margin: 0 3px 15px;
   position: relative;
+  text-align: center;
 `;
 const Category = styled('div')`
   position: relative;
-  margin: 10px 0;
+  margin: 10px auto;
   width: 60px;
   height: 60px;
   overflow: hidden;
@@ -22,7 +22,7 @@ export const CategoryIcon = styled(Category)`
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.13);
-  &:hover{
+  &:hover {
     background: #0b9ee1;
   }
 `;
@@ -57,4 +57,24 @@ export const CategoryAdd = styled(Category)`
     width: 2px;
     height: 20px;
   }
+`;
+
+export const CategoryTitle = styled('div')`
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  color: #4f4f4f;
+  height: 18px;
+  line-height: 18px;
+`;
+
+interface CategoryActualAmountProps {
+  color?: string;
+}
+
+export const CategoryActualAmount = styled('div')<CategoryActualAmountProps>`
+  color: ${props => props.color || null};
 `;

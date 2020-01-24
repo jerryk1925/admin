@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Flex } from '../../../assets/styled';
 
 interface PopupProps {
   backgroundColor?: string;
@@ -25,7 +26,14 @@ export const Popup = styled('div')<PopupProps>`
     0 2px 9px 0 rgba(18, 106, 211, 0.06);
   width: 500px;
   border-radius: 4px;
+  text-align: left;
 `;
 
+export const PopupHeader = styled(Flex)`
+  padding: 15px;
+  border-bottom: 1px solid #e9ecef;
+`;
 
-
+export const PopupContent = styled('div')`
+  padding: 15px;
+`;

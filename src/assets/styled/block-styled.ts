@@ -31,12 +31,11 @@ export const BlockStatsAmount = styled('span')`
 `;
 
 export const BlockStatsTitle = styled('div')`
-  margin-top: 5px;
   text-transform: lowercase;
   font-size: 12px;
   color: #9a9898;
 `;
 
 export const BlockItemText = styled('div')`
-	text-align: center;
-`
+  text-align: center;
+`;
