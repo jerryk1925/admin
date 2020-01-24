@@ -1,6 +1,6 @@
 {
-  "allBuget": 100000,
-  "income": 200000,
+  "budget": 100000,
+  "received": 200000,
   "incomeArray": [
     {
       "id": 1,

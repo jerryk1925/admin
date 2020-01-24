@@ -23,11 +23,11 @@ export const Income: React.FC = () => {
             <BlockStatsTitle>date</BlockStatsTitle>
           </div>
           <BlockItemText>
-            <BlockStatsAmount>{db.income}</BlockStatsAmount>
+            <BlockStatsAmount>{db.received}</BlockStatsAmount>
             <BlockStatsTitle>received</BlockStatsTitle>
           </BlockItemText>
           <BlockItemText>
-            <BlockStatsAmount>{db.allBuget}</BlockStatsAmount>
+            <BlockStatsAmount>{db.budget}</BlockStatsAmount>
             <BlockStatsTitle>budget</BlockStatsTitle>
           </BlockItemText>
         </Flex>
